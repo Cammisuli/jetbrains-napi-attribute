@@ -1,5 +1,5 @@
-const { plus100 } = require('./index')
+const { checkObject } = require('./index')
 
-console.assert(plus100(0) === 100, 'Simple test failed')
+checkObject({ input: 'somestring', projects: 'project1' })
 
 console.info('Simple test passed')
