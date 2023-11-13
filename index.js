@@ -234,6 +234,7 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { checkObject } = nativeBinding
+const { checkObject, callbackReturnPromiseAndSpawn } = nativeBinding
 
 module.exports.checkObject = checkObject
+module.exports.callbackReturnPromiseAndSpawn = callbackReturnPromiseAndSpawn

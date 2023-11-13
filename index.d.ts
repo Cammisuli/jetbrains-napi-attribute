@@ -12,3 +12,4 @@ export interface ProjectsInput {
   projects: string | Array<string>
 }
 export function checkObject(input: JsInputs): void
+export function callbackReturnPromiseAndSpawn(jsFunc: (arg0: string) => Promise<string>): object
